@@ -4,18 +4,18 @@ I have set a goal to study the following technologies by the project:
 
 architecture components
 
-— LiveData
+1. LiveData
 
-ViewModel
+2. ViewModel
 
-RecyclerView
+3. RecyclerView
 
-Room
+4. Room
 
-Picasso
+5. Picasso
 
-LoaderManager
+6. LoaderManager
 
-ExecutorService
+7. ExecutorService
 
-Parsing Json
+8. Parsing Json
