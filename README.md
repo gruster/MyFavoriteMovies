@@ -4,7 +4,7 @@ I have set a goal to study the following technologies by the project:
 
 architecture components
 
-LiveData
+— LiveData
 
 ViewModel
 
