@@ -1,21 +1,21 @@
-The application helps to point your favorite movies for watching, sort, read reviews and watch trailers.
+***The application helps to point your favorite movies for watching, sort, read reviews and watch trailers.
 
 I have set a goal to study the following technologies by the project:
 
-1. architecture components
+* architecture components
 
-2. LiveData
+* LiveData
 
-3. ViewModel
+* ViewModel
 
-4. RecyclerView
+* RecyclerView
 
-5. Room
+* Room
 
-6. Picasso
+* Picasso
 
-7. LoaderManager
+* LoaderManager
 
-8. ExecutorService
+* ExecutorService
 
-9. Parsing Json
+* Parsing Json
