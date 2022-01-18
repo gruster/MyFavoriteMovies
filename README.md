@@ -2,20 +2,20 @@ The application helps to point your favorite movies for watching, sort, read rev
 
 I have set a goal to study the following technologies by the project:
 
-architecture components
+1. architecture components
 
-1. LiveData
+2. LiveData
 
-2. ViewModel
+3. ViewModel
 
-3. RecyclerView
+4. RecyclerView
 
-4. Room
+5. Room
 
-5. Picasso
+6. Picasso
 
-6. LoaderManager
+7. LoaderManager
 
-7. ExecutorService
+8. ExecutorService
 
-8. Parsing Json
+9. Parsing Json
