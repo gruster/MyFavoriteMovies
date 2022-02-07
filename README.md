@@ -22,6 +22,8 @@ I have set a goal to study the following technologies by the project:
 
 - [x] ExecutorService
 
-- [x] Parsing Json
+- [x] Retrofit
+
+- [x] RxJava
 
 - [x] MVVM
