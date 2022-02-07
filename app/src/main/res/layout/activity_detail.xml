@@ -23,7 +23,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageView
-            android:id="@+id/imageViewAddToFavorite"
+            android:id="@+id/imageViewAddToFavourite"
             android:layout_width="@dimen/size_of_star"
             android:layout_height="@dimen/size_of_star"
             android:layout_marginEnd="@dimen/margin_16"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewAddToFavorite"/>
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAddToFavourite"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

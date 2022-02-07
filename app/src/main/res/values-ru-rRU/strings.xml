@@ -16,4 +16,7 @@
     <string name="launch_trailer">Запустить трейлер</string>
     <string name="detail_big_poster_description">Постер к фильму</string>
     <string name="add_to_favorites">Добавить в избранное</string>
+    <string name="Error_download">Ошибка загрузки данных</string>
+    <string name="trailers_label">Трейлеры:</string>
+    <string name="reviews">Отзывы:</string>
 </resources>

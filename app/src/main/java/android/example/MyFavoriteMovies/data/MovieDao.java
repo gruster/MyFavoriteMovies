@@ -1,5 +1,9 @@
 package android.example.MyFavoriteMovies.data;
 
+
+import android.example.MyFavoriteMovies.pojo.FavouriteMovie;
+import android.example.MyFavoriteMovies.pojo.Movie;
+
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -10,21 +14,20 @@ import java.util.List;
 
 @Dao
 public interface MovieDao {
-
     @Query("SELECT * FROM movies")
     LiveData<List<Movie>> getAllMovies();
 
-    @Query("SELECT * FROM favorite_movies")
-    LiveData<List<FavoriteMovie>> getAllFavoriteMovies();
+    @Query("SELECT * FROM favourite_movies")
+    LiveData<List<FavouriteMovie>> getAllFavouriteMovies();
 
-    @Query("SELECT * FROM movies WHERE id == :movieId" )
+    @Query("SELECT * FROM movies WHERE id == :movieId")
     Movie getMovieById(int movieId);
 
-    @Query("SELECT * FROM favorite_movies WHERE id == :movieId" )
-    FavoriteMovie getFavoriteMovieById(int movieId);
+    @Query("SELECT * FROM favourite_movies WHERE id == :movieId")
+    FavouriteMovie getFavouriteMovieById(int movieId);
 
     @Query("DELETE FROM movies")
-    void deleteAllFromMovies();
+    void deleteAllMovies();
 
     @Insert
     void insertMovie(Movie movie);
@@ -33,8 +36,8 @@ public interface MovieDao {
     void deleteMovie(Movie movie);
 
     @Insert
-    void insertFavoriteMovie(FavoriteMovie movie);
+    void insertFavouriteMovie(FavouriteMovie movie);
 
     @Delete
-    void deleteFavoriteMovie(FavoriteMovie movie);
+    void deleteFavouriteMovie(FavouriteMovie movie);
 }

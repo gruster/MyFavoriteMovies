@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFavoriteMovies">
         <activity
-            android:name=".screens.FavoriteActivity"
+            android:name=".screens.FavouriteActivity"
             android:exported="false" />
         <activity
             android:name=".screens.DetailActivity"

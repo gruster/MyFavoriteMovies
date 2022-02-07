@@ -1,26 +1,24 @@
 package android.example.MyFavoriteMovies.data;
 
 import android.content.Context;
+import android.example.MyFavoriteMovies.pojo.FavouriteMovie;
+import android.example.MyFavoriteMovies.pojo.Movie;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {Movie.class, FavoriteMovie.class}, version = 8, exportSchema = false)
+@Database(entities = {Movie.class, FavouriteMovie.class}, version = 5, exportSchema = false)
 public abstract class MovieDatabase extends RoomDatabase {
 
     private static final String DB_NAME = "movies.db";
     private static MovieDatabase database;
     private static final Object LOCK = new Object();
 
-    public static MovieDatabase getInstance(Context context){
-        if (database == null) {
-            synchronized (LOCK) {
-                if(database == null){
-                    database = Room.databaseBuilder(context, MovieDatabase.class, DB_NAME)
-                            .fallbackToDestructiveMigration()
-                            .build();
-                }
+    public static MovieDatabase getInstance(Context context) {
+        synchronized (LOCK) {
+            if (database == null) {
+                database = Room.databaseBuilder(context, MovieDatabase.class, DB_NAME).fallbackToDestructiveMigration().build();
             }
         }
         return database;

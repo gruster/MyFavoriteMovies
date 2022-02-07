@@ -1,7 +1,14 @@
-package android.example.MyFavoriteMovies.data;
+package android.example.MyFavoriteMovies.pojo;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 public class Review {
+    @SerializedName("author")
+    @Expose
     private String author;
+    @SerializedName("content")
+    @Expose
     private String content;
 
     public Review(String author, String content) {
@@ -13,12 +20,12 @@ public class Review {
         return author;
     }
 
-    public String getContent() {
-        return content;
-    }
-
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getContent() {
+        return content;
     }
 
     public void setContent(String content) {
